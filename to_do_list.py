@@ -31,5 +31,9 @@ no_of_tasks = int(input("How many tasks do you want in your to_do_list:"))
 
 writing_tasks()   
 reading_tasks()
-changing_tasks()
-reading_tasks()
+
+task_change = input("Do you want to change a task? Y/N")
+if task_change == "Y":
+    changing_tasks()
+else:
+    reading_tasks()
